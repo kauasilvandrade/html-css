@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         
         caption {
@@ -27,9 +28,20 @@
             padding: 10px;
         }
 
-        thead, tfoot {
-            background-color: gray;
+        thead {
+            background-color: #383838;
             color: white;
+        }
+
+        tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         tbody > tr:nth-child(odd) {
