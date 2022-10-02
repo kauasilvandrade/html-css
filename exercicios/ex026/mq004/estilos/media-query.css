@@ -12,7 +12,24 @@ GRANDE TELAS: acima de 1200px
 
 /* IMPRESSORA */
 @media print {
-    
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 1px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
 }
 
 /* CELULAR */
@@ -39,6 +56,10 @@ GRANDE TELAS: acima de 1200px
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     body {
         background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 700px;
     }
 
     #phone {
