@@ -16,7 +16,7 @@
 
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
 
-        <menu id="menu">
+        <menu id="menuzinho">
 
             <ul>
 
@@ -53,7 +53,17 @@
 
     </main>
 
-    <script src="js/menu.js"></script>
+    <script>
+
+        function clickMenu() {
+            if (menuzinho.style.display == 'block') {
+                menuzinho.style.display = 'none'
+            } else {
+                menuzinho.style.display =  'block'
+            }
+        }
+
+    </script>
 
 </body>
 </html>
