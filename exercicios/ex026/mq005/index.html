@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     
     <header>
 
@@ -55,12 +56,23 @@
 
     <script>
 
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menuzinho.style.display = 'block'
+            } else {
+                menuzinho.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
+
             if (menuzinho.style.display == 'block') {
                 menuzinho.style.display = 'none'
             } else {
-                menuzinho.style.display =  'block'
+                menuzinho.style.display = 'block'
             }
+
         }
 
     </script>
